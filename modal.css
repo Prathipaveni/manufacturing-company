@@ -1,0 +1,10 @@
+.btn-cross{
+width: 113px !important;
+margin-right: 65px !important;
+background-color: #f01657ed !important;
+font-size: 20px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.modal-footer{
+    background-color: #e7e3e3;
+}
