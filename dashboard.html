@@ -7,8 +7,7 @@
        <!-- icon -->
        <link
        href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-       rel="stylesheet"
-     />
+       rel="stylesheet"/>
      <link
        rel="stylesheet"
        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -20,7 +19,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link rel="stylesheet" href="dashboard.css">
+    <!-- css -->
+        <link rel="stylesheet" href="dashboard.css">
+            <!-- css -->
+
     <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
@@ -37,28 +39,29 @@
             <div class="media d-flex align-items-center ">
                 <div class="media-body">
                     <div class="mb-2 text-center">
-                        <img src="assets/img/polo-shirt.png" alt="blue-shirts" width="20" height="20"
+                        <img src="assets/img/polo-shirt.png" alt="blue-shirts" width="31" height="29"
                             class="mb-3 pr-0 blue-shirts">
-                        <div class="logo fw-bold">Manufacturing<sub class="text-muted company pr-2">Company</sub></div>
+                        <div class="logo fw-bold">Manufacturing<sub class="company pr-2 fw-bold">Company</sub></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="">
-            <p class="text-primary font-weight-bold ml-5 pl-5 px-5 small pb-2 mb-0">
+        <div class="" style="font-size: 14px;">
+            <a href="dashboard.html" class="text-primary fw-bold px-5 small pb-2 mb-0 text-decoration-none">
                 <i class='bx bxs-layer-minus'></i>
                 Dashboard
-            </p>
-            <p class="text-gray font-weight-bold ml-5 pl-5 px-5 small py-2 mb-0">
+            </a>
+            <p class="fw-bold  ml-5 pl-5 px-5 small py-2 mb-0">
                 <i class='bx bx-clipboard'></i>
-                Planning Board
+                <a href="planboard.html" class="text-decoration-none text-gray"
+                >Planning Board</a>
             </p>
             </div>
             <div class="" style="margin-top: 400px">
         <hr/>
                 <p
-                class="text-gray font-weight-bold text-center px-5 small"
-                  style="letter-spacing: normal">
+                class="text-dark fw-bold text-center px-5 small"
+                  style="letter-spacing: normal" style="font-size: 14px;">
                   <i class="bx bx-log-out-circle" aria-hidden="true"></i>
                   Log out
                 </p>
@@ -69,11 +72,12 @@
 
     <!-- Page content holder -->
     <div class="page-content row " id="content">
-        <nav class="navbar navbar-expand-md navbar-white mb- p bg-white sticky-top">
+        <nav class="navbar navbar-expand-md navbar-white bg-white sticky-top">
             <a class="navbar-brand " href="#">
-                <button id="sidebarCollapse" type="button" class="btn btn-light   " data-toggle="collapse"
+                <button id="sidebarCollapse" type="button" class="btn btn-white shadow-none" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    aria-label="Toggle navigation" style="color: #070d59 !important;"
+                    >
                     <i class='bx bx-menu' width=20%></i>
                 </button>
             </a>
@@ -87,7 +91,7 @@
                       aria-label="Search"
                     />                    </form>
                 </div>
-                <div class="col-3 pt-2 d-flex justify-content-end">
+                <div class="col-3 pt-1 d-flex justify-content-end">
                     <ul class="navbar-nav ">
                         <li class="nav-item active pl-2">
                             <a class="nav-link" href="#">
@@ -96,7 +100,7 @@
                         </li>
                         <li class="nav-item pl-2">
                             <a class="nav-link " href="#">
-                                <img src="assets/img/avatar.jfif" alt="blue-shirts" width="20" height="20"
+                                <img src="assets/img/avatar.jfif" alt="blue-shirts" width="40"
                                     class="mb-1 pr-0 blue-shirts  rounded-pill">
                             </a>
                         </li>
@@ -120,8 +124,8 @@
       font-size: 14px;
     "
   >
-    <i class="fas fa-home text-gray" style="margin-right: 10px;"></i><i class="fas fa-greater-than text-gray" style="margin-right: 10px;"></i> Dashboard
-    <i class="fas fa-greater-than text-gray" style="margin-left: 10px;" ></i>
+    <i class="fas fa-home breadcrumbs" style="margin-right: 10px;"></i><i class="fas fa-greater-than breadcrumbs" style="margin-right: 10px;"></i> Dashboard
+    <i class="fas fa-greater-than breadcrumbs" style="margin-left: 10px;" ></i>
   </div>
 </div>
 
@@ -132,14 +136,12 @@
         <div class="col-11 mb-md-4 mb-sm-2 card" style="position: relative">
           <div class="card-body row">
             <div
-              class="col-8 mt-2"
-              style="
-                font-size: 12px;
-              "
-            >
-              <h5 class="mb-0">15000</h5>
+              class="col-8 mt-2">
+              <h5 class="mb-0 fw-bold"  style="
+              font-size: 20px;">15000</h5>
               <p class="mb-0">
-                <span class="fst-normal">Total No.of Factories</span>
+                <span class="fst-normal" style="
+                font-size: 12px !important;">Total No.of Factories</span>
               </p>
         
             </div>
@@ -168,27 +170,30 @@
         <div class="col-11 card" style="position: relative;">
           <div class="card-body row">
             <div
-              class="col-8 mt-2"
-              style="
-                font-size: 12px;
-              "
-            >
-              <h5 class="mb-0">27.424</h5>
+              class="col-8 mt-2">
+              <h5 class="mb-0 fw-bold"  style="
+              font-size: 20px;">27.424</h5>
               <p class="mb-0">
-                <span class="fst-normal">Total No.of Orders</span>
+                <span class="fst-normal" style="
+                font-size: 12px;">Total No.of Orders</span>
               </p>
-            
+        
             </div>
             <div class="col-4 pt-2">
               <p
-                class="bx bxs-t-shirt rounded-circle p-2 text-center"
+                class="
+                  bx
+                  bxs-t-shirt
+                  rounded-circle
+                  p-2
+                  text-center
+                  d-inline-block
+                "
                 style="
-                  color: rgb(255, 255, 0);
-                  background-color: rgba(255, 255, 0, 0.4);
+                color: rgb(219, 247, 142);
+                  background-color: rgba(196, 252, 122, 0.4);
                   font-size: larger;
-                  display: inline-block;
                   border-radius: 90px;
-                  text-align: center;
                 "
               ></p>
             </div>
@@ -199,26 +204,30 @@
         <div class="col-11 card" style="position: relative">
           <div class="card-body row">
             <div
-              class="col-8 mt-2"
-              style="
-                font-size: 12px;
-              "
-            >
-              <h5 class="mb-0">$ 29.200</h5>
+              class="col-8 mt-2">
+              <h5 class="mb-0 fw-bold"  style="
+              font-size: 20px;">29</h5>
               <p class="mb-0">
-                <span class="fst-normal">Total Earnings</span>
-                >
+                <span class="fst-normal" style="
+                font-size: 12px;">Total Earnings</span>
               </p>
+        
             </div>
-            <div class="col-md-4 pt-2">
+            <div class="col-4 pt-2">
               <p
-                class="bx bxs-t-shirt rounded-circle p-2 d-inline-block"
+                class="
+                  bx
+                  bxs-t-shirt
+                  rounded-circle
+                  p-2
+                  text-center
+                  d-inline-block
+                "
                 style="
-                  color: rgb(31, 16, 245);
-                  background-color: rgba(31, 16, 245, 0.4);
+                color: rgb(247, 162, 233);
+                  background-color: rgba(236, 117, 230, 0.4);
                   font-size: larger;
                   border-radius: 90px;
-                  text-align: center;
                 "
               ></p>
             </div>
@@ -229,25 +238,30 @@
         <div class="col-md-11 card" style="position: relative">
           <div class="card-body row">
             <div
-              class="col-md-8 mt-2"
-              style="
-                font-size: 12px;
-              "
-            >
-              <h5 class="mb-0">45</h5>
+              class="col-8 mt-2">
+              <h5 class="mb-0 fw-bold"  style="
+              font-size: 20px;">45</h5>
               <p class="mb-0">
-                <span class="fst-normal">Pending Orders</span>
+                <span class="fst-normal" style="
+                font-size: 12px;">Pending Orders</span>
               </p>
+        
             </div>
             <div class="col-4 pt-2">
               <p
-                class="bx bxs-t-shirt rounded-circle p-2 d-inline-block"
+                class="
+                  bx
+                  bxs-t-shirt
+                  rounded-circle
+                  p-2
+                  text-center
+                  d-inline-block
+                "
                 style="
-                  color: rgb(31, 16, 245);
-                  background-color: rgba(31, 16, 245, 0.4);
+                color: rgb(154, 231, 231);
+                  background-color: rgba(147, 230, 245, 0.4);
                   font-size: larger;
                   border-radius: 90px;
-                  text-align: center;
                 "
               ></p>
             </div>
@@ -263,12 +277,12 @@
                 <div class="row mx-2">
                     <div class="col-4 col-md-4">
                         <div class="card">
-                            <img src="assets/img/full1.jpg" alt="blue-shirts" width="87%">
+                            <img src="assets/img/sales-ration-copy.png" alt="blue-shirts">
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="card">
-                            <img src="assets/img/full2.jpg" alt="blue-shirts" width="90%">
+                            <img src="assets/img/sales-comprasion.png" alt="blue-shirts">
                         </div>
                     </div>
                 </div>
@@ -279,22 +293,22 @@
                 <div class="row mx-2">
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="assets/img/full3.jpg" alt="blue-shirts" width="100%" height="150px">
+                            <img src="assets/img/review1.JPG" alt="blue-shirts" width="100%" height="150px" style="border-radius: 5px;">
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="card">
-                            <img src="assets/img/full4.jpg" alt="blue-shirts" width="100%" height="150px">
+                            <img src="assets/img/492.JPG" alt="blue-shirts" width="100%" height="150px" style="border-radius: 5px;">
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="card">
-                            <img src="assets/img/full5.jpg" alt="blue-shirts" width="100%" height="150px">
+                            <img src="assets/img/whiteboard.JPG" alt="blue-shirts" width="100%" height="150px" style="border-radius: 5px;">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="assets/img/full6.jpg" alt="blue-shirts" width="100%" height="150px">
+                            <img src="assets/img/white2.JPG" alt="blue-shirts" width="100%" height="150px" style="border-radius: 5px;">
                         </div>
                     </div>
                 </div>
@@ -303,7 +317,7 @@
 
 
           <!-- footer -->
-          <footer class="bg-white fixed-bottom mt-5 mt-md-5" style="z-index: 4;">
+          <footer class="bg-white fw-bold fixed-bottom mt-5 mt-md-5" style="z-index: 4;">
             <div class="row">
             <div class="col-2 col-md-2"></div>
             <!-- Copyright -->

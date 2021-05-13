@@ -1,67 +1,53 @@
 
+*{
+  font-family: 'Open Sans';
+}
 .intro {
-    background-image: url("assets/img/mc-login.jpg");
-    height: 100vh;
+    background-image: url("assets/img/mc\ background.png");
+    /* height: 100vh; */
   }
   .logo{
-font-family: 'Open Sans', sans-serif;
-font-size: 18px;
-color: #070d59;
+font-size: 24px;
+color: #070D59;
 display: inline-block !important;
 position: relative;
 bottom: 2px;
-/* font-weight: 800;  */
 }
 .company{
-font-family: OpenSans;
-font-size: 12px;
+font-size: 15px;
+color: #070D59;
 letter-spacing: 0.6px; 
 }
+.company2{
+  font-size: 14px;
+  color: #070D59;
+  letter-spacing: 0.6px; 
+  }
 .welpart{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px; 
+    font-size: 12px;
+    color: #070D59;
 }
-.blue-shirts{
+/* .blue-shirts{
     margin-right: -4.5px;
-}
+} */
 .login{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px; 
+    font-size: 26px; 
     color: #070d59;
 }
-
-/* .has-float-label {
-    font-size: 13px !important;
-    color: #333 !important;
-    border-color: #dcdcdc !important;
-    min-height: 50px !important; 
-    width: 100% !important;
-} */
 .copyrights{
     font-size: 12px;
-    letter-spacing: 0.2px; 
 }
-/* .form-control input {
-    padding-left: 4px;
-} */
 .logo2{
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     display: inline-block !important;
     position: relative;
-    bottom: -4px;
-}
-.copyright{
- font-family: 'Open Sans', sans-serif;
-font-size: 16px;
 }
 .text-end{
-font-family: 'Open Sans', sans-serif;
 font-size: 12px;
 font-weight: bold;
  }
  .has-float-label .form-control:placeholder-shown:not(:focus)+label {
-    font-size: 10px !important;
+    font-size: 12px !important;
     opacity: .5 !important;
     top: 1em !important;
   }
@@ -79,21 +65,3 @@ font-weight: bold;
   .has-float-label label {
     width: max-content !important;
   }
- /* .has-float-label label {
- top: -1.5em !important;
- left: 2.75rem !important;
- } */
- /* .has-float-label .form-control:placeholder-shown:not(:focus)+label {
-    font-size: 10px !important;
-    opacity: .5 !important;
-    top: 1.3em !important;
-  }
-  
-  .has-float-label .form-control-sm:placeholder-shown:not(:focus)+label {
-    font-size: 12px !important;
-    opacity: .5 !important;
-    top: 0.6em !important;
-  }
-  .has-float-label label {
-    width: max-content !important;
-  } */
