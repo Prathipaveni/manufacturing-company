@@ -87,6 +87,11 @@ body {
       width: calc(100% - 17rem);
     }
   }
+  @media (max-width: 768px) {
+    .fixed-bottom {
+    font-size: 10px !important;
+      }
+    }
 
   .bodypart{
     margin-left: 25px !important;
