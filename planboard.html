@@ -56,17 +56,11 @@
             >Dashboard</a>
         </p>
   <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-white fw-bold  ml-5 pl-5 px-5 small py-2 mb-0 shadow-none text-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal" style="font-size: 12px;"
-    >
-    <i class='bx bx-clipboard'></i>
-    Planning Board
-  </button>
-
-
+  <p class="text-primary fw-bold ml-5 pl-5 px-5 small py-2 mb-0 text-primary">
+    <i class='bx bxs-layer-minus'></i>
+    <a href="planboard.html" class="text-decoration-none text-primary"
+    >Planning Board</a>
+</p>
         </div>
 
         <div  style="position: absolute; bottom: 0; width: 100%;">
@@ -440,7 +434,10 @@
                 <tbody>
                   <tr>
                     <th scope="row" style="font-size: 18px;">Chennai</th>
-                    <td class="bg-primary"></td>
+                    <td class="bg-primary p-4 w-100" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" type="button">
+                   </td>
+                    <!-- <td class="bg-primary"></td> -->
                     <td></td>
                     <td></td>
                     <td></td>
