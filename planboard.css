@@ -20,9 +20,13 @@ body {
     display: inline-block !important;
     position: relative;
     bottom: 2px;
+    margin-left: -7px !important;
   }
-  .blue-shirts{
-    margin-right: -4.5px;
+  /* .blue-shirts{
+    margin-right: -4.4px;
+    border-radius: 50% !important;  
+  } */
+  .profile{
     border-radius: 50% !important;
   }
 
@@ -52,11 +56,6 @@ body {
     margin-left: 17rem;
     transition: all 0.4s;
   } 
-  .page-content2 {
-    width: calc(100% - 17rem);
-    transition: all 0.4s;
-    width: auto;
-  } 
   
   #sidebar.active {
     margin-left: -17rem;
@@ -83,8 +82,13 @@ body {
   .text-primary{
       color:#7579e7 !important;
   }
-
-
+.copyrights{
+  font-size: 12px;
+  padding-right: 10px;
+}
+.crights{
+  font-size: 12px;
+}
 
   @media (max-width: 768px) {
     #sidebar {

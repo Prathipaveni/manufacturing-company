@@ -17,6 +17,7 @@ body {
   }
   .blue-shirts{
     margin-right: -4.5px;
+    /* border-radius: 50% !important; */
   }
   .company{
     font-size: 12px;
@@ -70,6 +71,13 @@ body {
   }
   .text-primary{
       color:#7579e7 !important;
+  }
+  .copyrights{
+    font-size: 12px;
+  }
+  .crights{
+    font-size: 12px;
+  
   }
   @media (max-width: 768px) {
     #sidebar {
