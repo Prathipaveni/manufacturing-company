@@ -3,7 +3,6 @@
   <head>
     <title>Dashboard Board</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- icon -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -14,185 +13,102 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
-    <!-- icon -->
-    <!-- bootstrap -->
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
-    <!-- css -->
     <link rel="stylesheet" href="dashboard.css" />
-    <!-- css -->
+    <link rel="stylesheet" href="planboard.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <!-- bootstrap -->
   </head>
 
   <body>
-   <!-- Vertical navbar -->
-   <div class="vertical-nav bg-white ml-md-5" id="sidebar" style="z-index: 5;"> 
-    <div style="position: relative; height: 100%;">
-    <div class="pt-3 px-3 mb-4 bg-white border">
-      <div class="media d-flex align-items-center">
-        <div class="media-body">
-          <div class="mb-2 text-center">
-            <img
-              src="assets/img/polo-shirt.png"
-              alt="blue-shirts"
-              width="30" height="27"
-              class="mb-3 pr-0"
-            />
-            <div class="logo fw-bold">Manufacturing<sub class="company pr-2 fw-bold">Company</sub></div>
+<div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-white bg-unique sticky-top shadow nav-css">
+        <div class="col-2">
+          <div class="media d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+                  <p class="logo mb-0">Smart Planner</p>
+              </a>
           </div>
+      </div>
+        <div class="col-3 text-left">
+            <!-- <div class="d-flex border nav-search">
+                <i class="fas fa-search search-icon"></i>
+                <input class="form-control border-0 shadow-none" type="search" placeholder="Search">
+            </div> -->
         </div>
-      </div>
-    </div>
-    <div class="" style="font-size: 14px;">
-      <p class="text-primary fw-bold px-4 small pb-2 mb-0">
-          <i class='bx bxs-layer-minus'></i>
-          <a href="dashboard.html" class="text-decoration-none text-primary" style="padding-left:8px;"
-          >Dashboard</a>
-      </p>
-<!-- Button trigger modal -->
-<p class="text-gray fw-bold ml-5 pl-5 px-4 small py-4 mb-0">
-  <i class='bx bx-clipboard'></i>
-  <a href="planboard.html" class="text-decoration-none text-gray" style="padding-left:8px;"
-  >Planning Board</a> <i class="fa fa-plus fa-xs offset-5" aria-hidden="true"></i>
-</p>
-      </div>
-        <div class="border-top" style="margin-bottom: -20px; position: absolute; bottom: 30px; width: 100%;padding-top: 20px;">
-                <p
-                class="fw-bold text-center small"
-                  style="letter-spacing: normal" style="font-size: 14px; padding-top:20px;">
-                  <i class="bx bx-log-out-circle" aria-hidden="true"></i>
-                  <a href="index.html" class="text-decoration-none text-dark"
-                  >Log out</a>
-                </p>
+        <div class="col-7">
+            <div class="pt-2 d-flex justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item active pl-2 pt-2">
+                        <p class="text-gray fw-bold px-4 small pb-2 mb-0" style="font-size: 12px;">
+                            <i class='bx bxs-layer-minus text-primary'></i>
+                            <a href="dashboard.html" class="text-decoration-none text-primary">Dashboard</a>
+                        </p>
+                    </li>
+                    <li class="nav-item active pl-2 pt-2" style="margin-right: 23px;">
+                        <p class="text-gray fw-bold ml-5 small" style="font-size: 12px;">
+                            <i class='bx bx-clipboard'></i>
+                            <a href="planboard.html" class="text-decoration-none text-gray">Planner</a>
+                        </p>
+                    </li>
+                    <li class="nav-item active pl-2 pt-2" style="margin-right: 23px;">
+                      <p class="text-gray fw-bold ml-5 small" style="font-size: 12px;">
+                        <i class='fab fa-earlybirds text-gray'></i>
+                          <a href="birdview.html" class="text-decoration-none text-gray">Birdview</a>
+                      </p>
+                  </li>
+                    <li class="nav-item active pl-2" style="margin-right: 23px;">
+                        <i class="fa fa-bell text-warning mt-2"></i>
+                    </li>
+                    <li class="nav-item">
+                        <img class="profile mb-0 pr-0" src="assets/img/avatar.jfif" alt="Avatar"
+                            style="width: 30px" />
+                    </li>
+                </ul>
             </div>
-                </div>
+        </div>
+    </nav>
+      
+    <div class="row mt-3">
+      <div class="text-primary heading">
+          <i class="fas fa-home fa-sm breadcrumbs"></i>
+          <i class='fas fa-angle-right arrow'></i> Dashboard
+          <i class='fas fa-angle-right arrow'></i>
+      </div>
   </div>
 
-    <!-- End vertical navbar -->
-
-    <!-- Page content holder -->
-    <div class="page-content row" id="content">
-      <nav class="navbar navbar-expand-md navbar-white px-4 mb-3 bg-white sticky-top">
-        <a class="navbar-brand" href="#">
-          <button
-            id="sidebarCollapse"
-            type="button"
-            class="btn btn-white shadow-none"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style="color: #070d59 !important"
-          >
-            <i class="bx bx-menu" width="20%"></i>
-          </button>
-        </a>
-        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-          <div class="col-9">
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control border-start border-0 shadow-none"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </form>
-          </div>
-          <div class="col-md-3 pt-2 d-flex justify-content-end">
-            <ul class="navbar-nav">
-              <li class="nav-item active pl-2">
-                <a class="nav-link pb-0" href="#">
-                  <i class="bx bxs-bell text-warning"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pt-1" href="#">
-                  <img
-                    src="assets/img/avatar.jfif"
-                    alt="blue-shirts"
-                    width="30"
-                    class="mb-1 pr-0 blue-shirts rounded-pill"
-                  />
-                </a>
-              </li>
-              <li class="nav-item pl-2">
-                <a class="nav-link disabled" href="#">
-                  <i class="bx bx-dots-horizontal-rounded"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
-      <div class="col-12 m-0 p-0"style="z-index:2;">
-
-      <!-- breadcrumbs -->
-      <div class="mb-3 mx-5">
-        <div class="text-primary px-1 fw-bold" style="font-size: 12px">
-          <i class="fas fa-home fa-sm breadcrumbs" style="margin-right: 25px"></i
-          ><i
-            class="fas fa-greater-than fa-xs breadcrumbs"
-            style="margin-right: 10px"
-          ></i>
-          Dashboard
-          <i
-            class="fas fa-greater-than fa-xs breadcrumbs"
-            style="margin-left: 25px"
-          ></i>
-        </div>
-      </div>
-
-      <!-- card -->
-      <div class="mt-md-2 mb-md-1 mx-5">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-8 d-flex justify-content-center">
-            <div class="col-md-12 mb-md-4 mb-sm-2 card" style="position: relative">
-              <div class="card-body row">
-                <div class="col-8 mt-2">
-                  <h5 class="mb-0 fw-bold" style="font-size: 20px">15000</h5>
-                  <p class="mb-0">
-                    <span class="fst-normal" style="font-size: 10px !important"
-                      >Total No.of Factories</span
-                    >
-                  </p>
+  <div class="row mt-3">
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body row">
+                <div class="col-8 mt-2" style="font-size: 14px;">
+                    <h5 class="mb-1 fw-bold text-dark" style="font-size: 18px;">150000</h5>
+                    <p class="mb-0">
+                      <span class="fst-normal" style="font-size: 10px !important"
+                        >Total No.of Factories</span
+                      >
+                    </p>
                 </div>
-                <div class="col-4 pt-2">
-                  <p
-                    class="
-                      bx
-                      bxs-t-shirt
-                      rounded-circle
-                      p-2
-                      text-center
-                      d-inline-block
-                    "
-                    style="
-                      color: rgb(31, 16, 245);
-                      background-color: rgba(31, 16, 245, 0.4);
-                      font-size: larger;
-                      border-radius: 90px;
-                    "
-                  ></p>
+                <div class="col-4 pt-4">
+                    <p class="bx bxs-t-shirt rounded-circle p-2 text-center d-inline-block order"></p>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-8 d-flex justify-content-center">
-            <div class="col-md-12 mb-md-4 mb-sm-2 card" style="position: relative">
-              <div class="card-body row">
-                <div class="col-8 mt-2">
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body row">
+                <div class="col-8 mt-2" style="font-size: 14px;">
                   <h5 class="mb-0 fw-bold" style="font-size: 20px">27.424</h5>
                   <p class="mb-0">
                     <span class="fst-normal" style="font-size: 10px !important"
@@ -200,31 +116,16 @@
                     >
                   </p>
                 </div>
-                <div class="col-4 pt-2">
-                  <p
-                    class="
-                      bx
-                      bxs-t-shirt
-                      rounded-circle
-                      p-2
-                      text-center
-                      d-inline-block
-                    "
-                    style="
-                      color: rgb(235, 195, 88);
-                      background-color: rgba(216, 241, 74, 0.4);
-                      font-size: larger;
-                      border-radius: 90px;
-                    "
-                  ></p>
+                <div class="col-4 pt-4">
+                    <p class="bx bxs-t-shirt rounded-circle p-2 text-center order2"></p>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-8 d-flex justify-content-center">
-            <div class="col-md-12 mb-md-4 mb-sm-2 card" style="position: relative">
-              <div class="card-body row">
-                <div class="col-8 mt-2">
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body row">
+                <div class="col-8 mt-2" style="font-size: 14px;">
                   <h5 class="mb-0 fw-bold" style="font-size: 20px">$29.200</h5>
                   <p class="mb-0">
                     <span class="fst-normal" style="font-size: 10px !important"
@@ -232,31 +133,16 @@
                     >
                   </p>
                 </div>
-                <div class="col-4 pt-2">
-                  <p
-                    class="
-                      bx
-                      bxs-t-shirt
-                      rounded-circle
-                      p-2
-                      text-center
-                      d-inline-block
-                    "
-                    style="
-                      color: rgb(243, 126, 243);
-                      background-color: rgba(231, 81, 236, 0.4);
-                      font-size: larger;
-                      border-radius: 90px;
-                    "
-                  ></p>
+                <div class="col-4 pt-4">
+                    <p class="bx bxs-t-shirt rounded-circle p-2 text-center d-inline-block order"></p>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-8 d-flex justify-content-center">
-            <div class="col-md-12 mb-md-4 mb-sm-2 card" style="position: relative">
-              <div class="card-body row">
-                <div class="col-8 mt-2">
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body row">
+                <div class="col-8 mt-2" style="font-size: 14px;">
                   <h5 class="mb-0 fw-bold" style="font-size: 20px">45</h5>
                   <p class="mb-0">
                     <span class="fst-normal" style="font-size: 10px !important"
@@ -264,115 +150,60 @@
                     >
                   </p>
                 </div>
-                <div class="col-4 pt-2">
-                  <p
-                    class="
-                      bx
-                      bxs-t-shirt
-                      rounded-circle
-                      p-2
-                      text-center
-                      d-inline-block
-                    "
-                    style="
-                      color: rgb(82, 236, 229);
-                      background-color: rgba(108, 235, 240, 0.4);
-                      font-size: larger;
-                      border-radius: 90px;
-                    "
-                  ></p>
+                <div class="col-4 pt-4">
+                    <p class="bx bxs-t-shirt rounded-circle p-2 text-center order2"></p>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- card -->
-
-      <div class="mb-md-4 mx-5">
-          <div class="row ">
-            <div class="col-4 col-md-4">
-              <div class="card">
-                <img src="assets/img/sales-ration-copy.png" alt="blue-shirts" />
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card">
-                <img src="assets/img/sales-comprasion.png" alt="blue-shirts" />
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="mb-5 pb-5 mx-5">
-        <div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <img
-                  src="assets/img/review1.JPG"
-                  alt="blue-shirts"
-                  width="100%"
-                  height="150px"
-                  style="border-radius: 5px"
-                />
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="card">
-                <img
-                  src="assets/img/492.JPG"
-                  alt="blue-shirts"
-                  width="100%"
-                  height="150px"
-                  style="border-radius: 5px"
-                />
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="card">
-                <img
-                  src="assets/img/whiteboard.JPG"
-                  alt="blue-shirts"
-                  width="100%"
-                  height="150px"
-                  style="border-radius: 5px"
-                />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img
-                  src="assets/img/white2.JPG"
-                  alt="blue-shirts"
-                  width="100%"
-                  height="150px"
-                  style="border-radius: 5px"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+</div>
 
-
-      <!-- footer -->
-      <footer
-    class="bg-white fw-bold fixed-bottom mt-5 mt-md-5"
-    style="z-index: 4"
-  >
-    <div class="row col-12 w-100">
-      <div class="col-2"></div>
-      <!-- Copyright -->
-      <div class="col-6 p-lg-4 text-center crights">
-        Copyrights © 2021 Manufacturing Company. All rights reserved.
-      </div>
-      <div class="col-2 text-end p-lg-4 px-2 copyrights">Privacy policy</div>
-      <div class="col-2 text-center p-lg-4 copyrights1">Terms&Conditions</div>
-      <!-- Copyright -->
+<div class="row mt-3">
+  <div class="col-4">
+    <div class="card">
+      <img src="assets/img/sales-ration-copy.png" alt="blue-shirts" class="barchart" />
     </div>
-  </footer>
-      <!-- footer -->
+  </div>
+  <div class="col-8">
+    <div class="card">
+      <img src="assets/img/sales-comprasion.png" alt="blue-shirts" class="barchart" />
+    </div>
+  </div>
+</div>
+
+<div class="row mt-3 mb-3">
+  <div class="col-4">
+    <div class="card">
+      <img src="assets/img/review1.JPG" alt="blue-shirts" class="w-100 charts" />
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="card">
+      <img src="assets/img/492.JPG" alt="blue-shirts" class="w-100 charts" />
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="card">
+      <img src="assets/img/whiteboard.JPG" alt="blue-shirts" class="w-100 charts" />
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="card">
+      <img src="assets/img/white2.JPG" alt="blue-shirts" class="w-100 charts" />
+    </div>
+  </div>
+</div>
+  </div>
+  <footer
+  class="bg-white fw-bold fixed-bottom mt-5 mt-md-5"style="z-index: 4">
+  <div class="row">
+    <div class="col-12 text-center crights pt-2 pb-1 text-secondary">
+      Copyrights © 2021 Manufacturing Company. All rights reserved.
+    </div>
+    <div class="col-12 text-center px-2 crights pb-1 text-gray">Privacy policy</div>
+    <div class="col-12 text-center crights pb-1 text-gray">Terms&Conditions</div>
+  </div>
+</footer>
   </div>
 
 
@@ -394,12 +225,12 @@
     ></script>
     <!-- <script src="main.js"></script> -->
         <!-- js -->
-        <script>
+        <!-- <script>
           $(function () {
             $("#sidebarCollapse").on("click", function () {
               $("#sidebar, #content").toggleClass("active");
             });
           });
-        </script>
+        </script> -->
   </body>
 </html>

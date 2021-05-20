@@ -65,3 +65,76 @@ font-weight: bold;
   .has-float-label label {
     width: max-content !important;
   }
+
+  /* Dashboard CSS and Planner CSS */
+
+  .logo{
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+  }
+
+  ::selection { background-color: #C3CFE2; }
+
+  .nav-css {
+    z-index: 5;
+    height: 50px;
+  }
+
+  .card{
+    overflow: hidden !important;
+  }
+
+  .breadcrumbs{
+    color: #b2b3bd;
+  }
+
+  .text-gray {
+    color: #aaa;
+  }
+
+  .text-primary{
+      color:#7579e7 !important;
+  }
+  
+  .crights{
+    font-size: 12px;
+  }
+
+  .fixed-bottom{
+    z-index: -1;
+    font-size: 14px;
+  }
+
+  .barchart{
+    width: 60%;
+    margin: auto;
+  }
+
+  .charts{
+    height: 150px;
+  }
+
+  .fa-home, .fa-greater-than{
+    margin-right: 10px;
+    color: rgb(194, 196, 197);
+    font-size: 20px;
+  }
+
+  @media (max-width: 1500px) {
+    .card{
+      overflow-y: scroll !important;
+    }
+    }
+  
+    /* BirdView CSS  */
+
+    .country{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      color: #2C2E34;
+      margin-left: 5px;
+    }
