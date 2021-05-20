@@ -83,10 +83,6 @@ font-weight: bold;
     height: 50px;
   }
 
-  .card{
-    overflow: hidden !important;
-  }
-
   .breadcrumbs{
     color: #b2b3bd;
   }
@@ -123,11 +119,29 @@ font-weight: bold;
     font-size: 20px;
   }
 
-  @media (max-width: 1500px) {
-    .card{
-      overflow-y: scroll !important;
-    }
-    }
+  .pad-place{
+    padding: 5px !important;
+  }
+
+  .pad-month{
+    padding: 15px !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
   
     /* BirdView CSS  */
 
